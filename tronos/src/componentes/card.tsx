@@ -8,7 +8,7 @@ export function Card({ personaje }: { personaje: Personaje }) {
       <div className="card character__card">
         <img
           src={'img/' + personaje.nombre.toLowerCase() + '.jpg'}
-          alt={personaje.nombre + this.personaje.familia}
+          alt={personaje.nombre + personaje.familia}
           className="character__picture card-img-top"
         />
         <div className="card-body">

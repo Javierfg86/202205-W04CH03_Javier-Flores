@@ -1,14 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import { CrearPersonajes } from './componentes/personajes';
+import { List } from './componentes/lista';
 
 function App() {
+  const personajes = CrearPersonajes();
   return (
     <>
-      <main>
-        <CrearPersonajes></CrearPersonajes>
-      </main>
+      <div className="app container">
+        <List personajes={personajes}></List>
+      </div>
     </>
   );
 }
