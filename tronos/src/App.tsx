@@ -1,15 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { CrearPersonajes } from './componentes/personajes';
 
 function App() {
   return (
     <>
       <main>
-        <div className="app container">
-          <ul className="characters-list row list-unstyled"></ul>
-        </div>
-        <div className="comunications"></div>
+        <CrearPersonajes></CrearPersonajes>
       </main>
     </>
   );
